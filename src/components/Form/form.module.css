@@ -1,0 +1,52 @@
+.Name, .Email, .Phone{
+    border: none;
+    font-weight: bolder;
+    background-color: rgb(222, 228, 238);
+    display: flex;
+    height: 3em;
+    width: 500px;
+    padding: 10px 10px 0 10px;
+    border-radius: 9px;
+    outline: none;
+    
+}
+.Name:focus,.Email:focus,.Phone:focus, .message:focus{
+    border: solid 2px;
+    border-color: #0d6efd;
+}
+label{
+    transform: translate(10px, 8px);
+    color: rgb(155, 155, 155);
+    font-size: 19px;
+    transition: 0.3s;
+}
+.submit_btn{
+    color:white !important;
+    width:250px;
+    border-radius: 18px !important;
+    
+}
+.form{
+    display: flex;
+    align-items: flex-start;
+}
+.message{
+    border-radius: 9px;
+    border: none;
+    font-weight: bold;
+    padding: 10px;
+    width: 500px;
+    background-color: rgb(222, 228, 238);
+    outline: none;
+}
+.focused{
+    /* color: #0d6efd !important; */
+    background: white;
+    box-shadow: rgba(28, 52, 190, 0.35) 0px 3px 8px;
+}
+.focused_label{
+    font-size: 14px !important;
+    font-weight: bold;
+    transform: translate(5,0);
+    color: #0d6efd;
+}
