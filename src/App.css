@@ -1,7 +1,7 @@
 .App {
-  text-align: center;
   height: 100vh;
   display: flex;
+  text-align: center;
 }
 /* Mannual styles */
 .container {
@@ -16,7 +16,7 @@
   display: flex;
   flex-direction: row;
   height: 100% !important;
-  width: 80vw !important;
+  width: 1070px !important;
   overflow: hidden;
 }
 .rightImg {
@@ -37,4 +37,34 @@
 }
 #svgWave {
   fill: white !important;
+}
+@media (max-width:1344px) {
+  .wave svg{
+    left: 396px;
+  }
+}
+@media(max-width:1000px){
+  .right{
+    display: none;
+  }
+  .container{
+    width: 100%;
+    /* margin-left: 50px; */
+    /* margin-right: 50px; */
+    align-items: center;
+  }
+  .App{
+    height: fit-content;
+  }
+}
+@media(max-width:550px){
+  .App{
+    height: fit-content;
+  }
+  .container{
+    width: 100%;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-top: 50px;
+  }
 }
